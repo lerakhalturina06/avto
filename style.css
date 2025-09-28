@@ -811,7 +811,6 @@ footer {
         justify-content: center;
     }
 }
-/* Стили для страниц аутентификации */
 .auth-section {
     padding: 4rem 0;
     background: var(--background);
@@ -880,7 +879,7 @@ footer {
     justify-content: center;
 }
 
-/* Сообщения об ошибках */
+
 .error-messages {
     background: #fef2f2;
     border: 1px solid #fecaca;
@@ -907,7 +906,7 @@ footer {
     margin: 0.5rem 0;
 }
 
-/* Сообщение об успехе */
+
 .success-message {
     text-align: center;
     padding: 2rem;
@@ -936,7 +935,6 @@ footer {
     justify-content: center;
 }
 
-/* Ссылки аутентификации */
 .auth-links {
     border-top: 1px solid var(--border-light);
     padding-top: 1.5rem;
@@ -972,7 +970,7 @@ footer {
     color: var(--text);
 }
 
-/* Адаптивность */
+
 @media (max-width: 768px) {
     .auth-card {
         padding: 2rem;
@@ -998,4 +996,5 @@ footer {
     .auth-section {
         padding: 2rem 0;
     }
+
 }
