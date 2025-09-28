@@ -1,0 +1,18 @@
+CREATE TABLE `rentals` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `car_id` int(11) NOT NULL,
+  `start_date` date NOT NULL,
+  `end_date` date NOT NULL,
+  `pickup_location` varchar(255) NOT NULL,
+  `return_location` varchar(255) NOT NULL,
+  `status` enum('new','confirmed','completed','cancelled') DEFAULT 'new',
+  `total_price` decimal(10,2) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `car_id` (`car_id`),
+  CONSTRAINT `rentals_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  CONSTRAINT `rentals_ibfk_2` FOREIGN KEY (`car_id`) REFERENCES `cars` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
