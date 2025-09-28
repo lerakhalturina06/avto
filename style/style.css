@@ -405,7 +405,7 @@ nav a.active::after {
     flex-wrap: wrap;
 }
 
-/* Быстрая регистрация */
+
 .quick-register {
     background: linear-gradient(135deg, var(--primary-light) 0%, #f1f8e9 100%);
     padding: 1.5rem 2rem;
@@ -811,7 +811,7 @@ footer {
         justify-content: center;
     }
 }
-/* Стили для страниц аутентификации */
+
 .auth-section {
     padding: 4rem 0;
     background: var(--background);
@@ -880,7 +880,7 @@ footer {
     justify-content: center;
 }
 
-/* Сообщения об ошибках */
+
 .error-messages {
     background: #fef2f2;
     border: 1px solid #fecaca;
@@ -907,7 +907,7 @@ footer {
     margin: 0.5rem 0;
 }
 
-/* Сообщение об успехе */
+
 .success-message {
     text-align: center;
     padding: 2rem;
@@ -936,7 +936,7 @@ footer {
     justify-content: center;
 }
 
-/* Ссылки аутентификации */
+
 .auth-links {
     border-top: 1px solid var(--border-light);
     padding-top: 1.5rem;
